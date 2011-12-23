@@ -1,0 +1,23 @@
+{
+  "name": "tribily-dns",
+  "author": "Walter Heck - Tribily",
+  "description": "Manages three files so far:\n\n/etc/hosts\n/etc/hosts.allow\n/etc/resolv.conf",
+  "license": "GPL v3",
+  "project_page": "https://github.com/Tribily/puppet-dns",
+  "source": "https://github.com/Tribily/puppet-dns",
+  "summary": "Rudimentary DNS module for puppet",
+  "version": "1.0",
+  "checksums": {
+    "Modulefile": "eb17cf0402d8984cb3b43a31368ae939",
+    "README": "66c1c80f197537e55480f78917aa16cc",
+    "manifests/host_access.pp": "f1881e300f8ac3ed758c0b582acecc12",
+    "manifests/hosts.pp": "eb9c3372eaeaf47e25c579e2c7976491",
+    "manifests/resolv.pp": "bf2c7a64f006ebb642b10be3e1952cfd",
+    "spec/spec.opts": "a600ded995d948e393fbe2320ba8e51c",
+    "spec/spec_helper.rb": "ca19ec4f451ebc7fdb035b52eae6e909",
+    "tests/host_access.pp": "3d1130eb80696ad9355c9d3604b4428e",
+    "tests/hosts.pp": "5161d3afb4a2c97bc20eec26e9ae47a8",
+    "tests/resolv.pp": "5ead92e49e3e2cae16f5f3c651303de6"
+  },
+  "dependencies": []
+}
