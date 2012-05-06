@@ -1,5 +1,5 @@
 # resolv.conf contains nameserver information
-define dns::resolv ($resolv_file) {
+class dns::resolv ($resolv_file) {
   file { '/etc/resolv.conf' :
       ensure  => present,
       mode    => 0644,

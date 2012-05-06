@@ -1,3 +1,3 @@
-dns::resolv {"/etc/resolv.conf" :
+class { 'dns::resolv':
   resolv_file => '/dev/null'
 }

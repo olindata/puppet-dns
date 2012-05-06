@@ -1,3 +1,3 @@
-dns::host_access { '/etc/hosts.deny':
+class { 'dns::host_access':
   hosts_access_file => '/dev/null'
-}  
+}

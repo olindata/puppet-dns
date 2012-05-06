@@ -2,13 +2,12 @@
 # instead of the native 'host' resource type.  It seems to be easier
 # to simply copy the same hosts file around instead of allowing puppet
 # to manage it with its own resource type.
-define dns::hosts ($hosts_file) {
-  file {
-    $name :
-      ensure => present,
-      mode => 0644,
-      owner => 'root',
-      group => 'root',
-      content => template($hosts_file),
+class dns::hosts ($hosts_file) {
+  file { '/etc/hosts' :
+    ensure  => present,
+    mode    => 0644,
+    owner   => 'root',
+    group   => 'root',
+    content => template($hosts_file),
   }
 }
