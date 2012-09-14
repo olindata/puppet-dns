@@ -7,7 +7,7 @@ class dns::host_access ($hosts_allow_file, $hosts_deny_file) {
       mode   => 0644,
       owner  => 'root',
       group  => 'root',
-      source => $hosts_allow_file
+      content => template($hosts_allow_file)
   }
 
   file { '/etc/hosts.deny':
